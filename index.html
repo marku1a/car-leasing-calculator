@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car leasing calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "calculator-form-div">
+    <form class = "form-container">
+        <h1>Car Leasing Calculator</h1>
+        <div class="form-div">
+            <div class="car-type-value-div">
+                <label class="label" id="car-type-label">Car Type:</label>
+                <div class="select-div">
+                    <select class="select-car-type" id="car-type-select">
+                        <option value="brand-new">Brand New</option>
+                        <option value="used">Used</option>
+                    </select>
+                </div>
+                <label class="label" id="car-value-label">Car Value (€10,000-€200,000):</label>
+                <div id="value-text-div" class="text-div">
+                    <input type="text" class="text" id="car-value-text" placeholder="Enter car value" />
+                    <div id="car-value-error" class="error-message" style="display:none;">Please enter a valid value.</div>
+                </div>
+                <div id="lease-slider-div" class="slider-div">
+                    <input type="range" min="10000" max="200000" value="57000" class="slider" id="car-value-slider" />
+                </div>
+            </div>
+            <div class="lease-downpayment-div">
+                <label for="down-payment" class="label">Down Payment: <span id="down-payment-display">20</span>%</label>
+                <div id="payment-slider-div" class="slider-div-payment">
+                    <input type="range" class="slider" id="down-payment-slider" min="10" max="50" value="20" step="5" />
+                </div>
+                <label for="lease-period" class="label">Lease Period (months):</label>
+                <div id="input-lease-period-div" class="text-div">
+                    <input type="text" class="text" id="lease-period-text" value="24" />
+                    <div id="lease-period-error" class="error-message" style="display:none;">Please enter lease period in 12 increments.</div>
+                </div>
+                <div id="lease-slider-div" class="slider-div-lease">
+                    <input type="range" class="slider" id="lease-period-slider" min="12" max="60" value="24" step="12" />
+                </div>
+                
+            </div>
+        </div>
+        <div class="hline-canvas">
+            <canvas height="0" style="border:1px solid #b6b6b6; width: 90%;"></canvas>
+        </div>
+        <h2>Leasing Details</h2>
+        <div class="leasing-details-div">
+            <div class="cost-payment-div">
+                <p id="total-leasing-cost">Total Leasing Cost: €</p>
+                <p id="down-payment-p">Down Payment: €</p>
+            </div>
+            <div class="vline-canvas">
+                <canvas  width="0" height="70" style="border:1px solid #b6b6b6"></canvas>
+            </div>
+            <div class="installmen-interest-div">
+                <p id="monthly-installment-p">Monthly installment: €</p>
+                <p id="interest-rate-p">Interest rate: €</p>
+            </div>
+        </div>
+    <script src="app.js"></script>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+body {
+    font-family:sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f1f1f1;
+    border:1px solid #bbb;
+    border-radius: 8px;
+}
+.calculator-form-div {
+    background: #fff;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    max-height: 480px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+.form-div {
+    display:flex;
+    justify-content: center;
+}
+.car-type-value-div {
+    width: 50%;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.select-div {
+    padding-top: 5px;
+    padding-bottom: 18px;
+}
+
+.text-div{
+    padding-top: 5px;
+}
+.slider-div {
+    padding-top: 25px;
+    padding-bottom: 32px;
+}
+.slider-div-payment {
+    padding-top: 12px;
+    padding-bottom: 28px;
+}
+.slider-div-lease {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    border-radius: 5px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #0078D7; 
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #0078D7; 
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.slider::-ms-thumb {
+    width: 15px;
+    height: 15px;
+    background: #0078D7;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #fff; 
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); 
+}
+
+.leasing-details-div {
+    display: flex;
+}
+h2 {
+    text-align: center;
+}
+.select-car-type {
+    width: 270px;
+    height: 35px;
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+}
+.select-car-type option {
+    font-size: 1rem;
+    cursor: pointer;
+}
+.select-car-type:hover {
+    cursor: pointer;
+}
+
+.text {
+    width: 265px;
+    height: 30px;
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+}
+.slider {
+    width: 270px;
+}
+.hline-canvas {
+    display: flex;
+    justify-content: center;
+}
+.leasing-details-div {
+    display: flex;
+    justify-content:space-between;
+}
+.cost-payment-div {
+   padding-left: 30px;
+   font-weight: bold;
+}
+.installmen-interest-div {
+   padding-right: 30px;
+   font-weight: bold;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .calculator-form-div {
+        max-height: 1000px;
+        margin: 0;
+    }
+    .form-div {
+        flex-direction: column;
+    }
+    .leasing-details-div {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+    .car-type-value-div, .lease-period-div {
+        width: 100%;
+    }
+    .vline-canvas {
+        display: none;
+    }
+    .select-car-type {
+        width: 100%;
+    }
+     .text, .slider {
+        width: 99%;
+    }
+
+    .cost-payment-div, .installment-interest-div {
+        text-align: left;
+        padding: 10px 0 0;
+    }
+}
