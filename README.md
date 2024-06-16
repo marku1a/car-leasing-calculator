@@ -7,18 +7,12 @@ and calculates monthly installment, total leasing cost, down payment, and intere
 ## Project requirements and my interpretation
 
 **Requirments**:
--Car type(brand new or used)
- -a dropdown list with two options
--Car value with the range from 10,000 to 200,000
- -a text input field
- -a range input field
--Lease period (from 12 to 60 months with 12 months increments)
- -a text input field
- -a range input field
--Down payment (between 10% and 50% with 5% increments)
- -a range input field
+  - Car type(brand new or used), a dropdown list with two options
+  - Car value with the range from 10,000 to 200,000, a text input field, a range input field
+  - Lease period (from 12 to 60 months with 12 months increments), a text input field, a range input field
+  - Down payment (between 10% and 50% with 5% increments), a range input field
 
- On pictures it was shown a little bit different solution, but I tried more to stick to this.
+ On pictures it was shown a little bit different solution, but I aimed to adhere closely to this approach.
 
 **Interpretation**:
 
